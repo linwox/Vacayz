@@ -9,7 +9,6 @@ public class HomeController {
     @RequestMapping("/home.html")
     public ModelAndView homePage() {
         int customerCount = 1;
-        int number = 2;
         return new ModelAndView("home", "customerCount", customerCount);
     }
 }
