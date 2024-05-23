@@ -36,13 +36,6 @@ public class House {
         this.objectId = objectId;
     }
 
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
 
     public String getAddress() {
         return address;
