@@ -7,13 +7,20 @@
 <form:form modelAttribute="form">
     <form:errors path="" element="div" />
     <div>
-        <form:label path="name">Name</form:label>
-        <form:input path="name" />
-        <form:errors path="name" />
+        <form:label path="objectId">Objekt-id</form:label>
+        <form:input path="objectId" />
+        <form:errors path="objectId" />
+    </div><div>
+        <form:label path="available">Ledig</form:label>
+        <form:input path="available" />
+        <form:errors path="available" />
     </div>
     <div>
         <input type="submit" />
     </div>
 </form:form>
 </body>
+<nav>
+    <a href="http://localhost:8080/home.html">Home</a>
+</nav>
 </html>

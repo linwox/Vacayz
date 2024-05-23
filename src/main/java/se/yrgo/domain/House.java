@@ -36,6 +36,14 @@ public class House {
         this.objectId = objectId;
     }
 
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
     public String getAddress() {
         return address;
     }
@@ -86,7 +94,7 @@ public class House {
 
     @Override
     public String toString() {
-        return String.format("House info: %d, %s, %s, %s, %s, %d, Available: %b, image: %s",
-                id, objectId, address, area, location, maxGuests, available, imageUrl);
+        return String.format("House info: %s Available: %b",
+                objectId, available);
     }
 }

@@ -15,7 +15,6 @@
     <img src="/images/house.gif" alt="house">
 </div>
 <nav>
-    <a href="http://localhost:8080/allHouses.html">See all houses</a>
-    <a href="http://localhost:8080/newHouse.html">Add house</a>
-    <a href="http://localhost:8080/houseInfo.html">House info</a>
+    <a href="http://localhost:8080/website/houses/list.html">See all houses</a>
+    <a href="http://localhost:8080/website/houses/newHouse.html">Add house</a>
 </nav>

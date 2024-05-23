@@ -11,8 +11,17 @@
 
 <ul>
     <c:forEach items="${houses}" var="house">
-        <li>${house}</li>
+        <li>
+            <a href="http://localhost:8080/website/houses/house/${house.objectId}">${house}</a>
+        </li>
+
     </c:forEach>
 </ul>
 </body>
 </html>
+
+<nav>
+    <a href="http://localhost:8080/home.html">Home</a>
+    <a href="http://localhost:8080/website/houses/newHouse.html">Add house</a>
+</nav>
+
