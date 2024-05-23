@@ -9,14 +9,14 @@ import jakarta.persistence.Id;
 public class House {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
-    int id;
-    String objectId;
-    String address;
-    String area;
-    String location;
-    int maxGuests;
-    boolean available;
-    String imageUrl;
+    private Long id;
+    private String objectId;
+    private String address;
+    private String area;
+    private String location;
+    private int maxGuests;
+    private boolean available;
+    private String imageUrl;
 
     public House() {}
 
