@@ -10,3 +10,4 @@
     <a href="http://localhost:8080/website/houses/list.html">See all houses</a>
     <a href="http://localhost:8080/home.html">Home</a>
 </nav>
+
