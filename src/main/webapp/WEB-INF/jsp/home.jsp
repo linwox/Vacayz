@@ -16,4 +16,6 @@
 </div>
 <nav>
     <a href="http://localhost:8080/allHouses.html">See all houses</a>
+    <a href="http://localhost:8080/newHouse.html">Add house</a>
+    <a href="http://localhost:8080/houseInfo.html">House info</a>
 </nav>
