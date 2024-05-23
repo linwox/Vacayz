@@ -38,20 +38,11 @@ public class HouseController {
         return new ModelAndView("allHouses", "houses", allHouses);
     }
 
-    //Search for a house by its area
-    @RequestMapping(value = "/house/{area}")
-    public ModelAndView showHouseByArea(@PathVariable("area") String area) {
-        House house = data.findByArea(area);
+    //Search for a house by its objectId
+    @RequestMapping(value = "/house/{objectId}")
+    public ModelAndView showHouseByObjectId(@PathVariable("objectId") String objectId) {
+        House house = data.findByObjectId(objectId);
         return new ModelAndView("houseInfo", "house", house);
     }
-
-    //Search for a house by its location
-    @RequestMapping(value = "/house/{location}")
-    public ModelAndView showHouseByLocation(@PathVariable("location") String location) {
-        House house = data.findByLocation(location);
-        return new ModelAndView("houseInfo", "house", house);
-    }
-
-
 
 }
