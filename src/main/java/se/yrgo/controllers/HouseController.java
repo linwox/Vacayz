@@ -32,7 +32,7 @@ public class HouseController {
     }
 
     //Responsible for listing all the houses
-    @RequestMapping(value = "/allHouses.html", method = RequestMethod.GET)
+    @RequestMapping(value = "/list.html", method = RequestMethod.GET)
     public ModelAndView houses() {
         List<House> allHouses = data.findAll();
         return new ModelAndView("allHouses", "houses", allHouses);
