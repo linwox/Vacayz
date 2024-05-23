@@ -9,7 +9,7 @@ import jakarta.persistence.Id;
 public class House {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
-    private Long id;
+    private long id;
     private String objectId;
     private String address;
     private String area;
@@ -26,6 +26,14 @@ public class House {
 
     public void setObjectId(String objectId) {
         this.objectId = objectId;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getAddress() {
@@ -78,7 +86,7 @@ public class House {
 
     @Override
     public String toString() {
-        return String.format("House info: %d, %s, %s, %s, %s, %d, Available: %b, image: %s",
-                id, objectId, address, area, location, maxGuests, available, imageUrl);
+        return String.format("House info: %s Available: %b",
+                objectId, available);
     }
 }

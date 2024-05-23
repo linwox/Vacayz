@@ -16,3 +16,7 @@
 </ul>
 </body>
 </html>
+<nav>
+    <a href="http://localhost:8080/home.html">Home</a>
+    <a href="http://localhost:8080/website/houses/newHouse.html">Add house</a>
+</nav>
