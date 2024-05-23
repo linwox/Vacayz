@@ -28,7 +28,7 @@ public class HouseController {
     @RequestMapping(value = "/newHouse.html", method = RequestMethod.GET)
     public ModelAndView newHouseForm() {
         House newHouse = new House();
-        return new ModelAndView("newHouse", "form", newHouse);
+        return new ModelAndView("newHouse.jsp", "form", newHouse);
     }
 
     //Responsible for listing all the houses
