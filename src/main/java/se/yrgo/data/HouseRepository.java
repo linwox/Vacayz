@@ -7,4 +7,5 @@ import se.yrgo.domain.House;
 @Repository
 public interface HouseRepository extends JpaRepository<House, Long> {
     House findByArea(String area);
+    House findByLocation(String location);
 }

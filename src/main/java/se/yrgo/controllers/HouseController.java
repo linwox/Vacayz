@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
+import se.yrgo.data.HouseRepository;
 import se.yrgo.domain.House;
 
 import java.util.List;
@@ -31,7 +32,7 @@ public class HouseController {
     }
 
     //Responsible for listing all the houses
-    @RequestMapping(value = "/list.html", method = RequestMethod.GET)
+    @RequestMapping(value = "/allHouses.html", method = RequestMethod.GET)
     public ModelAndView houses() {
         List<House> allHouses = data.findAll();
         return new ModelAndView("allHouses", "houses", allHouses);
@@ -39,8 +40,18 @@ public class HouseController {
 
     //Search for a house by its area
     @RequestMapping(value = "/house/{area}")
-    public ModelAndView showVehicleByArea(@PathVariable("area") String area) {
+    public ModelAndView showHouseByArea(@PathVariable("area") String area) {
         House house = data.findByArea(area);
         return new ModelAndView("houseInfo", "house", house);
     }
+
+    //Search for a house by its location
+    @RequestMapping(value = "/house/{location}")
+    public ModelAndView showHouseByLocation(@PathVariable("location") String location) {
+        House house = data.findByLocation(location);
+        return new ModelAndView("houseInfo", "house", house);
+    }
+
+
+
 }
