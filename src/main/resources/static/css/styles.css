@@ -16,3 +16,9 @@ p {
     text-align: center;
     font-size: 18px;
 }
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
