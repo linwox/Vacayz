@@ -32,7 +32,7 @@ public class HouseController {
     }
 
     // Sends you to the deleteHouse page
-    @RequestMapping(value = "/deleteHouse.html", method = RequestMethod.GET)
+    @RequestMapping(value = "/deleteHouse", method = RequestMethod.GET)
     public String deleteHousePage() {
         return "deleteHouse";
     }

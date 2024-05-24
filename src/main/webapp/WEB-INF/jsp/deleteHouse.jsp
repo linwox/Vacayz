@@ -28,7 +28,7 @@
         event.preventDefault();
         const houseId = document.getElementById("houseId").value;
 
-        fetch(`http://localhost:8080/website/houses/${house.id}`, {
+        fetch(`http://localhost:8080/website/houses/${houseId}`, {
             method: 'DELETE'
         })
             .then(response => {
