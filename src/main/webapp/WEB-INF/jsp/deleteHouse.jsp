@@ -33,6 +33,9 @@
         // Get the house ID from the input field
         var houseId = document.getElementById("houseId").value;
 
+        // Log the retrieved house ID
+        console.log("House ID:", houseId);
+
         // Make a DELETE request to the server
         fetch(`http://localhost:8080/website/houses/${houseId}`, {
             method: 'DELETE'
