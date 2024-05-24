@@ -7,10 +7,9 @@ import java.util.List;
 public class HouseList {
     private List<House> houses;
 
-    public HouseList() {
-    }
+    public HouseList() {}
 
-    public HouseList(List<House> vehicles) {
+    public HouseList(List<House> houses) {
         this.houses = houses;
     }
 
