@@ -20,8 +20,8 @@ public class HouseRestController {
         return new HouseList(all);
     }
 
-    @RequestMapping(value = "/vehicles", method = RequestMethod.POST)
-    public ResponseEntity createANewVehicle(@RequestBody House house) {
+    @RequestMapping(value = "/houses", method = RequestMethod.POST)
+    public ResponseEntity createANewHouse(@RequestBody House house) {
         data.save(house);
         return new ResponseEntity<House>(house, HttpStatus.CREATED);
     }
