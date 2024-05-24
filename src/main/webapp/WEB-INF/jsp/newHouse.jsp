@@ -10,7 +10,8 @@
         <form:label path="objectId">Objekt-id</form:label>
         <form:input path="objectId" />
         <form:errors path="objectId" />
-    </div><div>
+    </div>
+    <div>
         <form:label path="available">Ledig</form:label>
         <form:input path="available" />
         <form:errors path="available" />
