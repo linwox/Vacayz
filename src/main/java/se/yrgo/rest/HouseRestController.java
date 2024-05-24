@@ -9,18 +9,19 @@ import se.yrgo.domain.House;
 import java.util.List;
 
 @RestController
+@RequestMapping("/website/houses")
 public class HouseRestController {
 
     @Autowired
     private HouseRepository data;
 
-    @RequestMapping("/houses")
+    @GetMapping("/json")
     public HouseList allHouses() {
         List<House> all = data.findAll();
         return new HouseList(all);
     }
 
-    @RequestMapping(value = "/houses", method = RequestMethod.POST)
+    @PostMapping("/json")
     public ResponseEntity createANewHouse(@RequestBody House house) {
         data.save(house);
         return new ResponseEntity<House>(house, HttpStatus.CREATED);
