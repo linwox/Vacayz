@@ -26,4 +26,17 @@ public class HouseRestController {
         data.save(house);
         return new ResponseEntity<House>(house, HttpStatus.CREATED);
     }
+
+    // Used to delete a house example: (curl -X DELETE http://localhost:8080/website/houses/1)
+    // This removes the house with id 1
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteHouseById(@PathVariable Long id) {
+        if (data.existsById(id)) {
+            data.deleteById(id);
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        } else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
+
 }
