@@ -17,15 +17,31 @@ p {
     font-size: 18px;
 }
 
+
+
 .image-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin-left: 10px;
+}
+
+li {
+    margin-bottom: 10px;
+}
 
 .info {
     text-align: left;
+}
+
+.info h1 {
+    margin-left: 1rem;
 }
 
 table {
@@ -72,6 +88,10 @@ nav a:hover {
 .button-link {
     text-decoration: none;
     margin: 0 10px;
+}
+
+form {
+    margin: 10px 10px;
 }
 
 button {

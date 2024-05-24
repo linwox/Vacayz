@@ -8,8 +8,8 @@
 </head>
 
 <body>
-<div class="container">
-    <h1>All houses</h1>
+<div class="info">
+    <h1 class="info">All houses</h1>
 
     <ul>
         <c:forEach items="${houses}" var="house">
@@ -19,9 +19,13 @@
         </c:forEach>
     </ul>
 
-    <div class="button-container">
-        <a href="http://localhost:8080/home.html" class="button-link">Home</a>
-        <a href="http://localhost:8080/website/houses/newHouse.html" class="button-link">Add house</a>
+    <div>
+        <a href="http://localhost:8080/website/houses/json" class="button-link"><button>JSON list</button></a>
+    </div>
+    <div>
+        <a href="http://localhost:8080/home.html" class="button-link"><button>Home</button></a>
+        <a href="http://localhost:8080/website/houses/newHouse.html" class="button-link"><button>Add a house</button></a>
+        <a href="http://localhost:8080/website/houses/newHouse.html" class="button-link"><button>Delete house</button></a>
     </div>
 </div>
 </body>

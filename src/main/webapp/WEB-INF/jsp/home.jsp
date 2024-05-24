@@ -17,4 +17,5 @@
 <div class="button-container">
     <a href="http://localhost:8080/website/houses/list.html" class="button-link"><button>See all houses</button></a>
     <a href="http://localhost:8080/website/houses/newHouse.html" class="button-link"><button>Add house</button></a>
+    <a href="http://localhost:8080/website/houses/newHouse.html" class="button-link"><button>Delete house</button></a>
 </div>

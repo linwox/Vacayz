@@ -33,7 +33,7 @@
         <td>${house.location}</td>
     </tr>
     <tr>
-        <td>Max Allowed Guests</td>
+        <td>Max Guests</td>
         <td>${house.maxGuests}</td>
     </tr>
     <tr>
@@ -42,9 +42,9 @@
     </tr>
 </table>
 
-<nav>
-    <a href="http://localhost:8080/website/houses/list.html">See all houses</a>
-    <a href="http://localhost:8080/home.html">Home</a>
-</nav>
+<div>
+    <a href="http://localhost:8080/website/houses/list.html" class="button-link"><button>See all houses</button></a>
+    <a href="http://localhost:8080/home.html" class="button-link"><button>Home</button></a>
+</div>
 </body>
-</html>
+

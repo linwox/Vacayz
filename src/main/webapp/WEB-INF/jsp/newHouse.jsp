@@ -29,11 +29,16 @@
 
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <html>
+<head>
+    <meta charset="UTF-8">
+    <title>New House</title>
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/styles.css">
+</head>
 <body>
-<h1>New House Registration</h1>
 
 <form id="houseForm" action="http://localhost:8080/website/houses/json" method="post">
-    <h2>With JSON</h2>
+<h1 class="info">New House Registration</h1>
+    <h2 class="info">With JSON</h2>
     <div>
         <textarea cols="40" rows="15" id="jsonData" name="jsonData" placeholder="Enter JSON object here"></textarea>
     </div>
@@ -74,8 +79,8 @@
     });
 </script>
 
-<nav>
-    <a href="http://localhost:8080/home.html">Home</a>
-</nav>
+<div>
+    <a href="http://localhost:8080/home.html" class="button-link"><button>Home</button></a>
+</div>
 </body>
 </html>
