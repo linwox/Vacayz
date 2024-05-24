@@ -17,7 +17,7 @@
         <button type="submit">Delete House</button>
     </form>
 
-    <div class="button-container">
+    <div>
         <a href="http://localhost:8080/home.html" class="button-link"><button>Home</button></a>
         <a href="http://localhost:8080/website/houses/list.html" class="button-link"><button>See all houses</button></a>
     </div>
