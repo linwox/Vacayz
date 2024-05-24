@@ -24,11 +24,17 @@ public class HouseController {
         return "redirect:/website/houses/list.html";
     }
 
-    //Presenting the initial form to the user
+    //Presenting the initial newHouse form to the user
     @RequestMapping(value = "/newHouse.html", method = RequestMethod.GET)
     public ModelAndView newHouseForm() {
         House newHouse = new House();
         return new ModelAndView("newHouse", "form", newHouse);
+    }
+
+    // Sends you to the deleteHouse page
+    @RequestMapping(value = "/deleteHouse.html", method = RequestMethod.GET)
+    public String deleteHousePage() {
+        return "deleteHouse";
     }
 
     //Responsible for listing all the houses

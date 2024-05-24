@@ -3,7 +3,7 @@
 
 <html>
 <head>
-    <title>Vacayz</title>
+    <title>All houses</title>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/styles.css">
 </head>
 
