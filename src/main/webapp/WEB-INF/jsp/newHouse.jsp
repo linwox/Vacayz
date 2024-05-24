@@ -40,6 +40,10 @@
     <input type="submit" value="Submit"/>
 </form>
 
+<div id="confirmationMessage" class="confirmation-message" style="display: none;">
+    The house has been added successfully!
+</div>
+
 <script>
     document.getElementById("houseForm").addEventListener("submit", function(event) {
         event.preventDefault(); // Prevent the form from submitting
@@ -59,6 +63,10 @@
         }).then(function(response) {
             // Handle response
             console.log(response);
+            // Clear textarea
+            document.getElementById("jsonData").value = "";
+            // Confirmation message
+            document.getElementById("confirmationMessage").style.display = "block";
         }).catch(function(error) {
             // Handle errors
             console.error(error);
