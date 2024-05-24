@@ -87,7 +87,7 @@ public class House {
 
     @Override
     public String toString() {
-        return String.format("House info: %s Available: %b",
-                objectId, available);
+        return String.format("ID: %d --- Object-ID: %s --- Available: %b",
+                id, objectId, available);
     }
 }

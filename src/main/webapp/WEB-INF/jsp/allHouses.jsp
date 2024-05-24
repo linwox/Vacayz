@@ -11,7 +11,7 @@
 <div class="info">
     <h1 class="info">All houses</h1>
 
-    <ul>
+    <ul class="house-list">
         <c:forEach items="${houses}" var="house">
             <li>
                 <a href="http://localhost:8080/website/houses/house/${house.objectId}">${house}</a>
