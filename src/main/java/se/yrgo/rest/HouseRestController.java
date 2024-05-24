@@ -25,4 +25,11 @@ public class HouseRestController {
         data.save(house);
         return new ResponseEntity<House>(house, HttpStatus.CREATED);
     }
+
+    @DeleteMapping("/houses")
+    public ResponseEntity deleteHouse(@RequestBody House house) {
+        data.delete(house);
+        return new ResponseEntity(HttpStatus.NO_CONTENT);
+    }
+
 }
