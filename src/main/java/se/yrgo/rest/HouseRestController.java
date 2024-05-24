@@ -27,10 +27,14 @@ public class HouseRestController {
         return new ResponseEntity<House>(house, HttpStatus.CREATED);
     }
 
-    @DeleteMapping("/houses")
-    public ResponseEntity deleteHouse(@RequestBody House house) {
-        data.delete(house);
-        return new ResponseEntity(HttpStatus.NO_CONTENT);
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteHouse(@PathVariable Long id) {
+        if (data.existsById(id)) {
+            data.deleteById(id);
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        } else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
     }
 
 }
