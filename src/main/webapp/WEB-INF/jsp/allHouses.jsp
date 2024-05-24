@@ -4,24 +4,25 @@
 <html>
 <head>
     <title>Vacayz</title>
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/styles.css">
 </head>
 
 <body>
-<h1>All houses</h1>
+<div class="container">
+    <h1>All houses</h1>
 
-<ul>
-    <c:forEach items="${houses}" var="house">
-        <li>
-            <a href="http://localhost:8080/website/houses/house/${house.objectId}">${house}</a>
-        </li>
+    <ul>
+        <c:forEach items="${houses}" var="house">
+            <li>
+                <a href="http://localhost:8080/website/houses/house/${house.objectId}">${house}</a>
+            </li>
+        </c:forEach>
+    </ul>
 
-    </c:forEach>
-</ul>
+    <div class="button-container">
+        <a href="http://localhost:8080/home.html" class="button-link">Home</a>
+        <a href="http://localhost:8080/website/houses/newHouse.html" class="button-link">Add house</a>
+    </div>
+</div>
 </body>
 </html>
-
-<nav>
-    <a href="http://localhost:8080/home.html">Home</a>
-    <a href="http://localhost:8080/website/houses/newHouse.html">Add house</a>
-</nav>
-

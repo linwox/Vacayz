@@ -14,7 +14,7 @@
 <div class="image-container">
     <img src="/images/house.gif" alt="house">
 </div>
-<nav>
-    <a href="http://localhost:8080/website/houses/list.html">See all houses</a>
-    <a href="http://localhost:8080/website/houses/newHouse.html">Add house</a>
-</nav>
+<div class="button-container">
+    <a href="http://localhost:8080/website/houses/list.html" class="button-link"><button>See all houses</button></a>
+    <a href="http://localhost:8080/website/houses/newHouse.html" class="button-link"><button>Add house</button></a>
+</div>

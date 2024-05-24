@@ -13,6 +13,10 @@
         <th>Value</th>
     </tr>
     <tr>
+        <td>ID</td>
+        <td>${house.id}</td>
+    </tr>
+    <tr>
         <td>House ID</td>
         <td>${house.objectId}</td>
     </tr>
