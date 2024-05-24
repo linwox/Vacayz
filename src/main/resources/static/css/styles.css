@@ -22,3 +22,42 @@ p {
     justify-content: center;
     align-items: center;
 }
+
+.info {
+    text-align: left;
+}
+
+table {
+    width: 30rem; /* Keep the table width */
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+th, td {
+    padding: 10px; /* Increase the padding for more space */
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+th:nth-child(1), td:nth-child(1) {
+    width: 5rem; /* Set the width of the fields column */
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 5rem; /* Set the width of the values column */
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
