@@ -25,7 +25,7 @@
     <div>
         <a href="http://localhost:8080/home.html" class="button-link"><button>Home</button></a>
         <a href="http://localhost:8080/website/houses/newHouse.html" class="button-link"><button>Add house</button></a>
-        <a href="http://localhost:8080/website/houses/newHouse.html" class="button-link"><button>Delete house</button></a>
+        <a href="http://localhost:8080/website/houses/deleteHouse" class="button-link"><button>Delete house</button></a>
     </div>
 </div>
 </body>

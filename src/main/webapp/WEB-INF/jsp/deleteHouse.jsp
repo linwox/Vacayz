@@ -9,7 +9,7 @@
 
 <body>
 <div class="info">
-    <h1 class="info">Delete a House</h1>
+    <h1 class="info">Delete House form</h1>
 
     <form id="deleteHouseForm">
         <label for="houseId">Enter House ID to Delete:</label>
