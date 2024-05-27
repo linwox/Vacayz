@@ -12,10 +12,9 @@
 </head>
 
 <h1 class="siteName">Vacayz!</h1>
-<h2>Cozy stays with Vacays!</h2>
-<p>You are customer number ${customerCount}</p>
+<h2 class="subtitle">Cozy stays with Vacays!</h2>
 <div class="image-container">
-    <img src="/images/house.gif" alt="house">
+    <img class="front-house" src="/images/house.gif" alt="house">
 </div>
 <div class="button-container">
     <a href="http://localhost:8080/website/houses/list.html" class="button-link"><button>See all houses</button></a>

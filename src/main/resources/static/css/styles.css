@@ -18,6 +18,11 @@ h1 {
     font-size: xxx-large;
 }
 
+.subtitle {
+    font-family: "Pacifico", cursive;
+    font-size: xx-large;
+}
+
 h2 {
     color: black;
     text-align: center;
@@ -39,6 +44,11 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.front-house {
+    width: 25rem;
+    height: auto;
 }
 
 .house-list {
