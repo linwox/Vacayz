@@ -9,7 +9,7 @@
 </head>
 
 <h1>Vacayz!</h1>
-<h2>Your ultimate vacation house dealer</h2>
+<h2>Cozy stays with Vacays!</h2>
 <p>You are customer number ${customerCount}</p>
 <div class="image-container">
     <img src="/images/house.gif" alt="house">
