@@ -13,7 +13,7 @@
     <div>
         <textarea cols="40" rows="15" id="jsonData" name="jsonData" placeholder="Enter JSON object here"></textarea>
     </div>
-    <input type="submit" value="Submit"/>
+    <input class="sub" type="submit" value="Submit"/>
 </form>
 
 <div id="confirmationMessage" class="confirmation-message" style="display: none;">
