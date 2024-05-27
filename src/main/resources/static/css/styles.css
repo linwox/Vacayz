@@ -110,3 +110,13 @@ button {
 button:hover {
     background-color: #45a049;
 }
+
+.houseimage {
+    height: 20rem;
+    padding: 2rem
+}
+
+.houseinfo {
+    display: flex;
+    flex-direction: row;
+}
