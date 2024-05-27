@@ -31,13 +31,10 @@
         event.preventDefault();  // Prevent the default form submission
 
         // Get the house ID from the input field
-        var houseId = document.getElementById("houseId").value;
-
-        // Log the retrieved house ID
-        console.log("House ID:", houseId);
+        const houseId = document.getElementById("houseId").value;
 
         // Make a DELETE request to the server
-        fetch(`http://localhost:8080/website/houses/${houseId}`, {
+        fetch(`http://localhost:8080/website/houses/\${houseId}`, {
             method: 'DELETE'
         })
             .then(response => {

@@ -28,7 +28,7 @@ public class HouseRestController {
     }
 
     // Used to delete a house example: (curl -X DELETE http://localhost:8080/website/houses/1)
-    // This removes the house with id 1
+    // This curl command removes the house with id 1
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteHouseById(@PathVariable Long id) {
         if (data.existsById(id)) {
