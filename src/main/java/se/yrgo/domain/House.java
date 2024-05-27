@@ -16,7 +16,7 @@ public class House {
     private String location;
     private int maxGuests;
     private boolean available;
-    private String imageUrl;
+    private String imageUrl = "https://media.istockphoto.com/id/155666671/sv/vektor/vector-illustration-of-red-house-icon.jpg?s=612x612&w=0&k=20&c=FcZjBqvSxmb1MZcCmxolBmeyPw6U2ume64aioih8X0A=";
 
     public House() {}
 
