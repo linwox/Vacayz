@@ -49,6 +49,10 @@
     The house has been added successfully!
 </div>
 
+<div id="errorMessage" class="error-message" style="display: none;">
+    That objectId does already exist, house was not added.
+</div>
+
 <script>
     document.getElementById("houseForm").addEventListener("submit", function(event) {
         event.preventDefault(); // Prevent the form from submitting
@@ -66,12 +70,24 @@
             headers: headers,
             body: jsonData
         }).then(function(response) {
-            // Handle response
-            console.log(response);
             // Clear textarea
             document.getElementById("jsonData").value = "";
-            // Confirmation message
-            document.getElementById("confirmationMessage").style.display = "block";
+
+            // Hide both messages initially
+            document.getElementById("confirmationMessage").style.display = "none";
+            document.getElementById("errorMessage").style.display = "none";
+
+            if (response.ok) {
+                // Success response
+                document.getElementById("confirmationMessage").style.display = "block";
+            } else if (response.status === 409) {
+                // Conflict response
+                document.getElementById("errorMessage").style.display = "block";
+            } else {
+                // Handle other errors
+                console.error('An error occurred:', response.statusText);
+            }
+
         }).catch(function(error) {
             // Handle errors
             console.error(error);

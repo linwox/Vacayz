@@ -23,8 +23,11 @@ public class HouseRestController {
 
     @PostMapping("/json")
     public ResponseEntity createANewHouse(@RequestBody House house) {
+        if (data.findByObjectId(house.getObjectId()) != null) {
+            return new ResponseEntity<>(HttpStatus.CONFLICT);
+        }
         data.save(house);
-        return new ResponseEntity<House>(house, HttpStatus.CREATED);
+        return new ResponseEntity<>(house, HttpStatus.CREATED);
     }
 
     // Used to delete a house example: (curl -X DELETE http://localhost:8080/website/houses/1)
