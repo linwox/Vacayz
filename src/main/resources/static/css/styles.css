@@ -11,6 +11,9 @@ body {
 h1 {
     color: hotpink;
     text-align: center;
+}
+
+.siteName {
     font-family: "Pacifico", cursive;
     font-size: xxx-large;
 }
@@ -100,7 +103,7 @@ form {
     margin: 10px 10px;
 }
 
-.sub{
+.sub {
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;

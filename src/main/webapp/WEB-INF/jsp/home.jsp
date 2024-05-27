@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 
-<h1>Vacayz!</h1>
+<h1 class="siteName">Vacayz!</h1>
 <h2>Cozy stays with Vacays!</h2>
 <p>You are customer number ${customerCount}</p>
 <div class="image-container">
