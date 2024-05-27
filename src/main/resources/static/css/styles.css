@@ -1,3 +1,9 @@
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
 body {
     font-family: Arial, sans-serif;
 }
@@ -5,6 +11,8 @@ body {
 h1 {
     color: hotpink;
     text-align: center;
+    font-family: "Pacifico", cursive;
+    font-size: xxx-large;
 }
 
 h2 {
